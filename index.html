@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>Temperature Unit Converter</p>
+    </div>
+
+    <div class="main">
+        <div class="converters">
+            <div class="celciousTokelvin">
+                <input type="radio" id="celciousTokelvin" name="conversion" value="celciousTokelvin">
+                <label for="celciousTokelvin">Celcius to Kelvin</label>
+            </div>
+            <div class="celciousTofahrenite">
+                <input type="radio" id="celciousTofahrenite" name="conversion" value="celciousTofahrenite">
+                <label for="celciousTofahrenite">Celcius to Fahrenheit</label>
+            </div>
+            <div class="kelvinTocelcious">
+                <input type="radio" id="kelvinTocelcious" name="conversion" value="kelvinTocelcious">
+                <label for="kelvinTocelcious">Kelvin to Celcius</label>
+            </div>
+            <div class="kelvinTofahrenite">
+                <input type="radio" id="kelvinTofahrenite" name="conversion" value="kelvinTofahrenite">
+                <label for="kelvinTofahrenite">Kelvin to Fahrenheit</label>
+            </div>
+            <div class="fahreniteTocelcious">
+                <input type="radio" id="fahreniteTocelcious" name="conversion" value="fahreniteTocelcious">
+                <label for="fahreniteTocelcious">Fahrenheit to Celcius</label>
+            </div>
+            <div class="fahreniteTokelvin">
+                <input type="radio" id="fahreniteTokelvin" name="conversion" value="fahreniteTokelvin">
+                <label for="fahreniteTokelvin">Fahrenheit to Kelvin</label>
+            </div>
+        </div>
+        <div class="answers">
+            <div class="inputs">
+                <input type="text" id="display1">
+                <input type="text" readonly id="display2">
+            </div>
+            <div class="button">
+                <button id="btn">Convert</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

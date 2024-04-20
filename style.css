@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    gap: 10px;
+    max-width: 50vw;
+}
+
+.header p {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main {
+
+    background-color: #f5f5f5;
+    border: 5px solid  #3498db;
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #333333;
+
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.main .converters {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.main .inputs {
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.main .converters input {
+    cursor: pointer;
+}
+
+.main .inputs input {
+    border: 2px solid  #3498db;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: unset;
+    margin: 5px;
+    height: 5vh;
+    width: 5vw;
+    border-radius: 20px;
+    font-size: medium;
+    background-color: #3498db;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: orange;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        flex-direction: column;
+        margin: 50px auto;
+    }
+  
+    .header p{
+        font-size: xx-large;
+    }
+    .main{
+        
+        height: 76vh;
+        width: 100vw;
+        background-color: unset;
+        border: unset;
+        
+    }
+    .main .converters{
+        font-size: x-large
+    }
+    .main .inputs input{
+        position: relative;
+        height: 8vh;
+        width: 45vw;
+        border: unset;
+    }
+    button{
+        height: 8vh;
+        width: 30vw;
+    }
+   
+  }
